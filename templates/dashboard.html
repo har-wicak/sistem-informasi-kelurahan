@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>{{ page_title }}</title>
+{% endblock %}
+
+{% block body %}
+<form class="container">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Title</label>
+      <input type="text" class="form-control" id="exampleInputTitle" aria-describedby="title">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Writer</label>
+      <input type="text" class="form-control" id="exampleInputWriter">
+    </div>
+      <label for="exampleInputPassword1">Konten</label>
+      <input type="text" class="form-control" id="exampleInputKonten">
+    </div>
+    <button type="submit" class="btn btn-primary my-5">Submit</button>
+  </form>
+{% endblock %}
