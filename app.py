@@ -12,7 +12,7 @@ def index():
 @app.route('/dashboard', methods=['GET', 'POST'])
 def dashboard():
     if request.method == 'GET':
-        return render_template('dashboard.html', page_title = "Web Kelurahan KKN")
+        return render_template('dashboard.html', page_title = "Dashboard")
     else:
         return "Unsupported Request Method"
 
