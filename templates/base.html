@@ -28,7 +28,9 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 {% set navigation_bar = [
                     ('/', 'beranda', 'Beranda'),
-                    ("/dashboard", 'dashboard', 'Dashboard')
+                    ("/profil", 'profil', 'Profil'),
+                    ("/dashboard", 'dashboard', 'Dashboard'),
+                    ("/articles", 'articles', 'Articles')
                 ] -%}
                 {% set active_page = active_page|default('beranda') -%}
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 id="navigation">

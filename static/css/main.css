@@ -25,7 +25,12 @@ body {
 }
 
 .sidebar {
-    width: 340px !important;
+    width: auto !important;
+    /* width: 100%; */
+}
+
+.height-auto {
+    height: auto;
 }
 
 .height-400 {
@@ -43,8 +48,9 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
-    border-radius: 10px;
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+    border-radius: 10px; */
+    display: none;
     /* display: block; */
 }
 
@@ -74,8 +80,8 @@ body {
 
 #articleCardDeck {
     /* overflow-x: auto; */
-    width: 1140px;
-    height: 436.625px;
+    /* width: auto; */
+    height: auto;
     border-color: white;
     background-color: white;
     box-shadow: 0px 34px 60px rgba(0, 0, 0, 0.25);
@@ -83,5 +89,16 @@ body {
 }
 
 #articleCardDeckRounded{
+    border-radius: 15px;
+}
+
+.article-section {
+    border-color: white;
+    background-color: white;
+    box-shadow: 0px 34px 60px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.rounded-img {
     border-radius: 15px;
 }

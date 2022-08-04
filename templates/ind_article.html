@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% set active_page = "ind_article" %}
+
+{% block head %}
+<title>{{ page_title }}</title>
+{% endblock %}
+
+{% block body %}
+<div class="container row mx-auto my-5 px-0">
+    <div class="col-lg-4 col-12 overflow-auto accordion py-3" id="accordionExample">
+        <div class="card sidebar">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-justify" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Juni 2022
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    Some placeholder content for the second accordion panel. This panel is hidden by default.
+                </div>
+            </div>
+
+        </div>
+        <div class="card sidebar">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-justify collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Juli 2022
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            The current link item
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card sidebar">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-justify collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Agustus 2022
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
+                data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            The current link item
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron bg-light text-dark col-12 col-lg height-auto ml-lg-3 my-5 my-lg-0 py-4">
+        <img src="static/img/wp2754864.jpg" class="card-img-top my-2 rounded-img" alt="...">
+        <h1 class="display-4">Article 1</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+            to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-dark btn-lg" href="#" role="button">Learn more</a>
+    </div>
+</div>
+{% endblock %}
