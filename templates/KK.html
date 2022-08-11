@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% set active_page = "skck" %}
+
+{% block head %}
+<title>{{ page_title }}</title>
+{% endblock %}
+
+{% block body %}
+<div class="container px-0">
+    <table border=1 frame=void rules=rows class="text-justify">
+        <tbody>
+            <tr>
+                <td class="py-3"><b>Pasal 11</b></td>
+            </tr>
+            <tr>
+                <td class="py-2">(1) Penduduk Warga Negara Indonesia wajib melaporkan susunan keluarganya kepada
+                    Instansi Pelaksana melalui Kepala desa/lurah dan camat.</td>
+            </tr>
+            <tr>
+                <td class="py-2">(2) Orang Asing yang memiliki Izin Tinggal Tetap wajib melaporkan susunan keluarganya
+                    kepada Instansi Pelaksana.</td>
+            </tr>
+            <tr>
+                <td class="py-2">(3) Pelaporan sebagaimana dimaksud pada ayat (1) dan ayat (2) sebagai dasar untuk
+                    penerbitan KK.</td>
+            </tr>
+            <tr>
+                <td class="py-3"><b>Pasal 12</b></td>
+            </tr>
+            <tr>
+                <td class="py-2">(1) Penerbitan KK baru bagi penduduk sebagaimana dimaksud dalam Pasal 11 ayat (1) dan
+                    ayat (2) dilakukan setelah memenuhi syarat berupa:<br>
+                    a. Izin Tinggal Tetap bagi Orang Asing;<br>
+                    b. Fotokopi atau menunjukkan Kutipan Akta Nikah/Kutipan Akta Perkawinan;<br>
+                    c. Surat Keterangan Pindah/Surat Keterangan Pindah Datang bagi penduduk yang pindah dalam wilayah
+                    Negara Kesatuan Republik Indonesia; atau<br>
+                    d. Surat Keterangan Datang dari Luar Negeri yang diterbitkan oleh Instansi Pelaksana bagi Warga
+                    Negara Indonesia yang datang dari luar negeri karena pindah.<br>
+                </td>
+            </tr>
+            <tr>
+                <td class="py-2">(2) Perubahan KK karena penambahan anggota keluarga dalam KK bagi penduduk yang
+                    mengalami kelahiran sebagaimana dimaksud dalam Pasal 11 ayat (1) dan ayat (2) dilakukan setelah
+                    memenuhi syarat berupa:<br>
+                    a. KK lama; dan<br>
+                    b. Kutipan Akta Kelahiran.
+                </td>
+            </tr>
+            <tr>
+                <td class="py-2">
+                    (3) Perubahan KK karena penambahan anggota keluarga untuk menumpang ke dalam KK bagi penduduk Warga
+                    Negara Indonesia dilakukan setelah memenuhi syarat berupa:<br>
+                    a. KK lama;<br>
+                    b. KK yang akan ditumpangi;<br>
+                    c. Surat Keterangan Pindah Datang bagi penduduk yang pindah dalam wilayah Negara Kesatuan Republik
+                    Indonesia; dan/atau<br>
+                    d. Surat Keterangan Datang dari Luar Negeri bagi Warga Negara Indonesia yang datang dari luar negeri
+                    karena pindah.
+                </td>
+            </tr>
+            <tr>
+                <td class="py-2">
+                    Perubahan KK karena penambahan anggota keluarga bagi Orang Asing yang memiliki Izin Tinggal Tetap
+                    untuk menumpang ke dalam KK Warga Negara Indonesia atau Orang Asing dilakukan setelah memenuhi
+                    syarat berupa:<br>
+                    a. KK lama atau KK yang ditumpangi;<br>
+                    b. Paspor;<br>
+                    c. Izin Tinggal Tetap; dan<br>
+                    d. Surat Keterangan Catatan Kepolisian bagi Orang Asing Tinggal Tetap;
+                </td>
+            </tr>
+            <tr>
+                <td class="py-2">
+                    (5) Perubahan KK karena pengurangan anggota keluarga dalam KK bagi penduduk sebagaimana dimaksud
+                    dalam Pasal 11 ayat (1) dan ayat (2) dilakukan setelah memenuhi syarat berupa:<br>
+                    a. KK lama;<br>
+                    b. surat keterangan kematian; atau <br>
+                    c. Surat Keterangan Pindah/Surat Keterangan Pindah Datang bagi penduduk yang pindah dalam wilayah
+                    Negara Kesatuan Republik Indonesia.
+                </td>
+            </tr>
+            <tr>
+                <td class="py-2">
+                    (6) Penerbitan KK karena hilang atau rusak bagi penduduk sebagaimana dimaksud dalam Pasal 11 ayat
+                    (1) dan ayat (2) dilakukan setelah memenuhi syarat berupa:<br>
+                    a. Surat Keterangan kehilangan dari Kepala desa/lurah;<br>
+                    b. KK yang rusak;<br>
+                    c. Fotokopi atau menunjukkan dokumen kependudukan dari salah satu anggota keluarga; atau<br>
+                    d. Dokumen keimigrasian bagi Orang Asing.
+                </td>
+            </tr>
+            <tr>
+                <td class="py-3"><b>Pasal 13</b></td>
+            </tr>
+            <tr>
+                <td class="py-2">
+                    (1) Penduduk Warga Negara Indonesia sebagaimana dimaksud dalam Pasal 11 ayat (1) wajib melapor
+                    kepada Kepala desa/lurah dengan menyerahkan persyaratan sebagaimana dimaksud dalam Pasal 12.
+                </td>
+            </tr>
+            <tr>
+                <td class="py-2">
+                    (2) Proses penerbitan atau perubahan KK di Desa/Kelurahan sebagaimana dimaksud pada ayat (1)
+                    dilakukan dengan tata cara:<br>
+                    a. Penduduk mengisi dan menandatangani formulir permohonan KK;<br>
+                    b. Petugas registrasi mencatat dalam Buku Harian Peristiwa Kependudukan dan Peristiwa Penting;<br>
+                    c. Petugas registrasi melakukan verifikasi dan validasi data penduduk;<br>
+                    d. Kepala desa/lurah menandatangani formulir permohonan KK; dan<br>
+                    e. Kepala desa/lurah/Petugas registrasi meneruskan berkas formulir permohonan KK kepada Camat
+                    sebagai dasar proses penerbitan atau perubahan KK di Kecamatan.
+                </td>
+            </tr>
+            <tr>
+                <td class="py-2">
+                    (3) Proses penerbitan atau perubahan KK di Kecamatan sebagaimana dimaksud pada ayat (2) huruf e,
+                    dilakukan dengan tata cara:<br>
+                    a. Petugas melakukan verifikasi dan validasi data penduduk;<br>
+                    b. Camat menandatangani formulir permohonan KK;<br>
+                    c. Petugas menyampaikan formulir permohonan KK yang dilampiri dengan kelengkapan berkas persyaratan
+                    kepada Instansi Pelaksana.
+                </td>
+            </tr>
+            <tr>
+                <td class="py-2">
+                    (4) Penerbitan atau perubahan KK di Instansi Pelaksana sebagaimana dimaksud pada ayat (3) huruf c,
+                    dilakukan dengan tata cara:<br>
+                    a. Petugas melakukan perekaman data ke dalam database kependudukan;<br>
+                    b. Kepala Instansi Pelaksana menerbitkan dan menanda-tangani KK.
+                </td>
+            </tr>
+            <tr>
+                <td class="py-3"><b>Pasal 14</b></td>
+            </tr>
+            <tr>
+                <td class="py-2">
+                    (1) Orang Asing yang memiliki Izin Tinggal Tetap sebagaimana dimaksud dalam Pasal 11 ayat (2) wajib
+                    melapor kepada Instansi Pelaksana dengan menyerahkan persyaratan sebagaimana dimaksud dalam Pasal
+                    12.
+                </td>
+            </tr>
+            <tr>
+                <td class="py-2">
+                    (2) Instansi Pelaksana memproses penerbitan atau perubahan KK sebagaimana dimaksud pada ayat (1),
+                    dengan tata cara:<br>
+                    a. Penduduk mengisi dan menandatangani Formulir Permohonan KK;<br>
+                    b. Petugas melakukan verifikasi dan validasi data penduduk;<br>
+                    c. Petugas menandatangani Formulir Permohonan KK;<br>
+                    d. Petugas melakukan perekaman data ke dalam database kependudukan.
+                </td>
+            </tr>
+            <tr>
+                <td class="py-2">
+                    (3) Kepala Instansi Pelaksana menerbitkan dan menandatangani KK.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}

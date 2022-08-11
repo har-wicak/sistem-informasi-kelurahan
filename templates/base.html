@@ -28,9 +28,9 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 {% set navigation_bar = [
                     ('/', 'beranda', 'Beranda'),
-                    ("/profil", 'profil', 'Profil'),
-                    ("/dashboard", 'dashboard', 'Dashboard'),
-                    ("/articles", 'articles', 'Articles')
+                    ('/profil', 'profil', 'Profil'),
+                    ('/dashboard', 'dashboard', 'Dashboard'),
+                    ('/articles', 'articles', 'Articles')
                 ] -%}
                 {% set active_page = active_page|default('beranda') -%}
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 id="navigation">
@@ -83,6 +83,7 @@
 
     {% block body %}{% endblock %}
 
+    <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>

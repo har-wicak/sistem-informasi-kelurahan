@@ -51,6 +51,27 @@ def article():
     else:
         return "Unsupported Request Method"
 
+@app.route('/skck', methods=['GET', 'POST'])
+def skck():
+    if request.method == 'GET':
+        return render_template('SKCK.html', page_title = "Article")
+    else:
+        return "Unsupported Request Method"
+
+@app.route('/e-ktp', methods=['GET', 'POST'])
+def ektp():
+    if request.method == 'GET':
+        return render_template('E-KTP.html', page_title = "Article")
+    else:
+        return "Unsupported Request Method"
+
+@app.route('/kk', methods=['GET', 'POST'])
+def kk():
+    if request.method == 'GET':
+        return render_template('KK.html', page_title = "Article")
+    else:
+        return "Unsupported Request Method"
+
 # @app.route('/pemerintahan')
 # def pemerintahan():
 #     return render_template('pemerintahan.html', page_title = "Laman Pemerintahan Desa")
